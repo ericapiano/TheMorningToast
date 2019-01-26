@@ -9,3 +9,8 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
   document.body.style.backgroundColor = "white";
 }
+
+let xmlrequest = new XMLHttpRequest();
+
+xmlrequest.open("GET", "/scrape", true);
+xmlrequest.send();

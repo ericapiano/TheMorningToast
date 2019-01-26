@@ -1,0 +1,132 @@
+body {
+  margin-bottom: 30px;
+  font-family: "Lato", sans-serif;
+  transition: background-color 0.5s;
+  background: url("../images/lips.jpg");
+  background-position: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+
+/* .fab {
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.fas {
+  background-color: blue;
+  border-radius: 50%;
+} */
+
+span {
+  color: black;
+  font-size: 50px;
+}
+.btn {
+  color: black;
+}
+
+.btn:hover {
+  color: rgb(242, 154, 191);
+}
+
+.link {
+  margin-bottom: 20px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(242, 154, 191);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-right: 3px solid black;
+  opacity: 1;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  font-size: 23px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.container {
+  background-color: white;
+  opacity: 0.8;
+  /* box-shadow: 5px 10px #888888; */
+}
+
+.inline {
+  display: inline-block;
+}
+
+#main > span.float > a:nth-child(1) {
+  text-decoration: none;
+  height: 20px;
+  width: 20px;
+}
+
+#main > span.float > a:nth-child(2) {
+  text-decoration: none;
+}
+
+#main > span.float > a:nth-child(3) {
+  text-decoration: none;
+}
+
+#main > span.float > a:nth-child(4) {
+  text-decoration: none;
+}
+
+.fa-2x {
+  font-size: 30px !important;
+  margin-left: 30px;
+}
+
+.toastLogo {
+  height: 50px;
+  width: 40px;
+  float: right;
+  position: static;
+  margin-left: 775px;
+  margin-top: 13px;
+}
