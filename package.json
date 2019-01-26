@@ -1,0 +1,29 @@
+{
+  "name": "themorningtoast",
+  "version": "1.0.0",
+  "description": "A website for the fans of the millenial morning show \"The Morning Toast\" hosted by the famous influencer, Claudia Oshry, professionally known as girlwithnojob on social media accounts.",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.5",
+    "mongojs": "^2.6.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericapiano/TheMorningToast.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericapiano/TheMorningToast/issues"
+  },
+  "homepage": "https://github.com/ericapiano/TheMorningToast#readme"
+}
