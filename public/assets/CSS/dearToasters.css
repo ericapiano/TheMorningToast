@@ -12,6 +12,10 @@ body {
   background-color: white;
 }
 
+.row {
+  position: relative;
+}
+
 /* .fab {
   background-color: blue;
   border-radius: 50%;
@@ -121,7 +125,7 @@ span {
 /* form css */
 
 .container2 {
-  height: 500px;
+  height: 250px;
   width: 500px;
   background-color: palevioletred;
   margin-right: auto;
@@ -130,6 +134,7 @@ span {
   padding-left: 30px;
   padding-top: 30px;
   border: 3px solid white;
+  margin-top: 40px;
 }
 
 #exampleFormControlInput12 {
@@ -139,10 +144,23 @@ span {
 }
 
 .toastLogo {
-  height: 50px;
-  width: 50px;
-  float: right;
-  position: static;
-  margin-left: 775px;
-  margin-top: 13px;
+  height: 61px;
+  width: 75px;
+  top: 13px;
+  right: 13px;
+  /* float: right; */
+  position: absolute;
+  /* margin-left: 775px;
+  margin-top: 13px; */
+  cursor: pointer;
+}
+
+/* new css */
+
+.navHeader {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: calc(100% - 20px);
+  background-color: rgba(192, 192, 192, 0.7);
 }

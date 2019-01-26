@@ -125,8 +125,19 @@ span {
 .toastLogo {
   height: 50px;
   width: 50px;
-  float: right;
-  position: static;
+  /* float: right; */
+  /* position: relative; */
   margin-left: 775px;
   margin-top: 13px;
+  cursor: pointer;
+  /* display: block; */
+}
+
+.row {
+  overflow: hidden;
+  display: block;
+}
+
+#main > span.float > a.btn.btn-primary.toastLogo2 > img {
+  position: fixed;
 }
