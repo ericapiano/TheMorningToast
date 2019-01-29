@@ -16,16 +16,6 @@ body {
   position: relative;
 }
 
-/* .fab {
-  background-color: blue;
-  border-radius: 50%;
-}
-
-.fas {
-  background-color: blue;
-  border-radius: 50%;
-} */
-
 span {
   color: black;
   font-size: 50px;
@@ -49,12 +39,12 @@ span {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(242, 154, 191);
+  background-color: rgba(242, 154, 191, 0.8);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
   border-right: 3px solid black;
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 .sidenav a {
@@ -147,7 +137,7 @@ span {
   height: 61px;
   width: 75px;
   top: 13px;
-  right: 13px;
+  right: 35px;
   /* float: right; */
   position: absolute;
   /* margin-left: 775px;

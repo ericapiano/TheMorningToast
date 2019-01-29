@@ -50,7 +50,7 @@ span {
   transition: 0.5s;
   padding-top: 60px;
   border-right: 3px solid black;
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 .sidenav a {
@@ -60,6 +60,7 @@ span {
   color: white;
   display: block;
   transition: 0.3s;
+  font-weight: 600;
 }
 
 .sidenav a:hover {
@@ -127,7 +128,7 @@ span {
   width: 50px;
   /* float: right; */
   /* position: relative; */
-  margin-left: 775px;
+  margin-left: 35px;
   margin-top: 13px;
   cursor: pointer;
   /* display: block; */

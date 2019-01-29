@@ -1,0 +1,181 @@
+body {
+  margin-bottom: 30px;
+  font-family: "Lato", sans-serif;
+  transition: background-color 0.5s;
+  background: url("../images/palmleaves.jpg");
+  background-position: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+
+.row {
+  position: relative;
+}
+
+span {
+  color: black;
+  font-size: 50px;
+}
+.btn {
+  color: black;
+}
+
+.btn:hover {
+  color: rgb(242, 154, 191);
+}
+
+.link {
+  margin-bottom: 20px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(242, 154, 191, 0.8);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-right: 3px solid black;
+  /* opacity: 1; */
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  font-size: 23px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.container {
+  background-color: white;
+  opacity: 0.8;
+  /* box-shadow: 5px 10px #888888; */
+}
+
+.inline {
+  display: inline-block;
+}
+
+#main > span.float > a:nth-child(1) {
+  text-decoration: none;
+  height: 20px;
+  width: 20px;
+}
+
+#main > span.float > a:nth-child(2) {
+  text-decoration: none;
+}
+
+#main > span.float > a:nth-child(3) {
+  text-decoration: none;
+}
+
+.fa-2x {
+  font-size: 30px !important;
+  margin-left: 30px;
+}
+
+/* form css */
+
+.container2 {
+  height: 250px;
+  width: 500px;
+  background-color: palevioletred;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 30px;
+  border: 3px solid white;
+  margin-top: 40px;
+}
+
+#exampleFormControlInput12 {
+  height: 200px;
+  width: 300px;
+  border-top: 50px;
+}
+
+.toastLogo {
+  height: 61px;
+  width: 75px;
+  top: 13px;
+  right: 35px;
+  /* float: right; */
+  position: absolute;
+  /* margin-left: 775px;
+  margin-top: 13px; */
+  cursor: pointer;
+}
+
+/* new css */
+
+.navHeader {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: calc(100% - 20px);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#blinds {
+  background-color: rgba(150, 146, 146, 0.9);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  height: 900px;
+  width: 1000px;
+  background-color: palevioletred;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 30px;
+  border: 3px solid white;
+  margin-top: 40px;
+}
+
+#blinds > div > h2 {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-top: 22px;
+  padding-bottom: 9px;
+}

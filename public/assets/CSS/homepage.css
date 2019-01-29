@@ -1,137 +1,156 @@
 body {
-  /* background-color: palevioletred; */
-  background: url("../images/palmleaves.jpg") top center no-repeat;
-}
-
-.jumbotron {
-  text-align: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  /* background-size: cover; */
-  /* padding-bottom: 50%; */
-  padding-top: 0%;
-  margin-bottom: 3px solid rgb(211, 183, 25);
-}
-
-.jumbotron2 {
-
-  text-align: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  /* background-size: cover; */
-  padding-top: 0%;
-
-}
-
-.text-center {
-  color: white;
-}
-
-img {
-  width: 100%;
-  height: 60%;
-
-}
-
-.navlink:hover {
-  text-decoration: underline;
-
-}
-
-.navbar {
-  background-color: black;
-}
-
-.btn-secondary {
-  background-color: black;
-}
-
-.jumbo-image {
-  background-repeat: no-repeat;
-  width: 100%;
+  margin-bottom: 30px;
+  font-family: "Lato", sans-serif;
+  transition: background-color 0.5s;
+  background: url("../images/lips.jpg");
+  background-position: fixed;
   background-size: cover;
-}
-
-.btngold {
-  align-content: center;
-  background-color: black;
-  color: white;
-  z-index: 2;
-  position: absolute;
-  top: 8px;
-
-}
-
-.btngold:hover {
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
   background-color: white;
-  color: black;
-  border: 4px solid rgb(241, 189, 57);
-  
 }
 
-footer {
-  clear: both;
-  font-size: 12px;
-  color: #fff;
-  text-align: center;
-  background:black;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  height: 40px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;  
-
-}
-
-marquee {
-  font-size: 20px;
-}
-
-
-
-/* Container needed to position the button. Adjust the width as needed */
-.container {
+.row {
   position: relative;
-  width: 100%;
-  height: 100%;
-  /* margin-top: 65px; */
-  
 }
 
-/* Make the image responsive */
-.container img {
-  width: 100%;
-  height: auto;
-}
-
-/* Style the button and place it in the middle of the container/image */
-.container .btn {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: white;
-  border: 4px solid gold; 
+span {
   color: black;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 12px 24px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-family: 'Source Sans Pro', sans-serif;
-
+  font-size: 50px;
+}
+.btn {
+  color: black;
 }
 
-.container .btn:hover {
-  background-color: palevioletred;
-  border: 4px solid gold; 
+.btn:hover {
+  color: rgb(242, 154, 191);
+}
+
+.link {
+  margin-bottom: 20px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(242, 154, 191, 0.8);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-right: 3px solid black;
+  /* opacity: 1; */
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
   color: white;
-  font-weight: 700;
-  font-family: 'Source Sans Pro', sans-serif;
-
+  display: block;
+  transition: 0.3s;
 }
 
-li { cursor: pointer; }
+.sidenav a:hover {
+  color: #f1f1f1;
+  font-size: 23px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.container {
+  background-color: white;
+  opacity: 0.8;
+  /* box-shadow: 5px 10px #888888; */
+}
+
+.inline {
+  display: inline-block;
+}
+
+#main > span.float > a:nth-child(1) {
+  text-decoration: none;
+  height: 20px;
+  width: 20px;
+}
+
+#main > span.float > a:nth-child(2) {
+  text-decoration: none;
+}
+
+#main > span.float > a:nth-child(3) {
+  text-decoration: none;
+}
+
+.fa-2x {
+  font-size: 30px !important;
+  margin-left: 30px;
+}
+
+/* form css */
+
+.container2 {
+  height: 250px;
+  width: 500px;
+  background-color: palevioletred;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 30px;
+  border: 3px solid white;
+  margin-top: 40px;
+}
+
+#exampleFormControlInput12 {
+  height: 200px;
+  width: 300px;
+  border-top: 50px;
+}
+
+.toastLogo {
+  height: 61px;
+  width: 75px;
+  top: 13px;
+  right: 35px;
+  /* float: right; */
+  position: absolute;
+  /* margin-left: 775px;
+  margin-top: 13px; */
+  cursor: pointer;
+}
+
+/* new css */
+
+.navHeader {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: calc(100% - 20px);
+  background-color: rgba(192, 192, 192, 0.7);
+}
