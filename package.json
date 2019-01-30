@@ -7,9 +7,10 @@
     "axios": "^0.18.0",
     "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.4",
-    "mongoose": "^5.4.5",
     "mongojs": "^2.6.0",
-    "request": "^2.88.0"
+    "mongoose": "^5.4.5",
+    "request": "^2.88.0",
+    "socket.io": "^2.2.0"
   },
   "devDependencies": {},
   "scripts": {

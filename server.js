@@ -1,7 +1,14 @@
 //Origional
-
 // require("dotenv").config();
 var express = require("express");
+
+// Initialize Express
+var app = express();
+
+var server = require("http").createServer(app);
+var io = require("socket.io").listen(server);
+users = [];
+
 // var logger = require("morgan");
 var mongoose = require("mongoose");
 
@@ -16,9 +23,6 @@ var db = require("./models");
 var DB_USER = process.env.DB_USER;
 var DB_PASS = process.env.DB_PASS;
 var PORT = process.env.PORT || 3100;
-
-// Initialize Express
-var app = express();
 
 // Configure middleware
 
@@ -96,7 +100,39 @@ app.get("/blinds", function(req, res) {
     });
 });
 
+//handle the socket
+io.sockets.on("connection", function(socket) {
+  //new user login
+  socket.on("login", function(nickname) {
+    if (users.indexOf(nickname) > -1) {
+      socket.emit("nickExisted");
+    } else {
+      //socket.userIndex = users.length;
+      socket.nickname = nickname;
+      users.push(nickname);
+      socket.emit("loginSuccess");
+      io.sockets.emit("system", nickname, users.length, "login");
+    }
+  });
+  //user leaves
+  socket.on("disconnect", function() {
+    if (socket.nickname != null) {
+      //users.splice(socket.userIndex, 1);
+      users.splice(users.indexOf(socket.nickname), 1);
+      socket.broadcast.emit("system", socket.nickname, users.length, "logout");
+    }
+  });
+  //new message get
+  socket.on("postMsg", function(msg, color) {
+    socket.broadcast.emit("newMsg", socket.nickname, msg, color);
+  });
+  //new image get
+  socket.on("img", function(imgData, color) {
+    socket.broadcast.emit("newImg", socket.nickname, imgData, color);
+  });
+});
+
 // Start the server
-app.listen(PORT, function() {
+server.listen(PORT, function() {
   console.log("App running on port " + PORT + "!");
 });
