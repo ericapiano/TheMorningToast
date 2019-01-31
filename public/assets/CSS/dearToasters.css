@@ -12,6 +12,10 @@ body {
   background-color: white;
 }
 
+.submitBtn {
+  background-color: rebeccapurple;
+}
+
 .row {
   position: relative;
 }

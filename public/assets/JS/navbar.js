@@ -10,7 +10,7 @@ function closeNav() {
   document.body.style.backgroundColor = "white";
 }
 
-let xmlrequest = new XMLHttpRequest();
+let xmlrequest2 = new XMLHttpRequest();
 
-xmlrequest.open("GET", "/scrape", true);
-xmlrequest.send();
+xmlrequest2.open("GET", "/scrape", true);
+xmlrequest2.send();

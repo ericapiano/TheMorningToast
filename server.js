@@ -2,6 +2,9 @@
 // require("dotenv").config();
 var express = require("express");
 
+const bodyParser = require("body-parser");
+const nodemailer = require("nodemailer");
+
 // Initialize Express
 var app = express();
 
@@ -57,18 +60,25 @@ app.get("/scrape", function(req, res) {
       var title = $(element)
         .children(".post-title")
         .text();
-      console.log(title);
+      // console.log(title);
+
+      var link = $(element)
+        .children(".post-title")
+        .children("a")
+        .attr("href");
+      console.log(link);
 
       var body = $(element)
         .children(".post-body")
         .text();
-      console.log(body);
+      // console.log(body);
 
-      if (title && body) {
+      if (title && link && body) {
         db.Blinds.create(
           {
             title: title,
-            body: body
+            body: body,
+            link: link
           },
           function(err, inserted) {
             if (err) {
