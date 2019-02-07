@@ -9,7 +9,7 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
-  background-color: white;
+  /* background-color: white; */
 }
 
 .row {

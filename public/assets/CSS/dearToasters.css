@@ -12,10 +12,18 @@ body {
   background-color: white;
 }
 
-.submitBtn {
-  background-color: rebeccapurple;
+body > div.container2 > form > input.submitBtn {
+  background-color: white;
+  /* margin-top: 10px; */
+  width: 15%;
+  color: palevioletred;
+  margin-left: 80%;
 }
 
+body > div.container2 > form > input.submitBtn:hover {
+  color: white;
+  background-color: green;
+}
 .row {
   position: relative;
 }

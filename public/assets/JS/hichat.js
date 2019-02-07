@@ -172,18 +172,18 @@ HiChat.prototype = {
     emojiContainer.appendChild(docFragment);
   },
   _displayNewMsg: function(user, msg, color) {
-    var container = document.getElementById("historyMsg"),
+    var container2 = document.getElementById("historyMsg"),
       msgToDisplay = document.createElement("p"),
       date = new Date().toTimeString().substr(0, 8),
       //determine whether the msg contains emoji
       msg = this._showEmoji(msg);
     msgToDisplay.style.color = color || "#000";
     msgToDisplay.innerHTML = user + "<span class='small'>: </span>" + msg;
-    container.appendChild(msgToDisplay);
-    container.scrollTop = container.scrollHeight;
+    container2.appendChild(msgToDisplay);
+    container2.scrollTop = container2.scrollHeight;
   },
   _displayImage: function(user, imgData, color) {
-    var container = document.getElementById("historyMsg"),
+    var container2 = document.getElementById("historyMsg"),
       msgToDisplay = document.createElement("p"),
       date = new Date().toTimeString().substr(0, 8);
     msgToDisplay.style.color = color || "#000";
@@ -197,8 +197,8 @@ HiChat.prototype = {
       '" target="_blank"><img src="' +
       imgData +
       '"/></a>';
-    container.appendChild(msgToDisplay);
-    container.scrollTop = container.scrollHeight;
+    container2.appendChild(msgToDisplay);
+    container2.scrollTop = container2.scrollHeight;
   },
   _showEmoji: function(msg) {
     var match,
