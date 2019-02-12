@@ -28,5 +28,6 @@
   "bugs": {
     "url": "https://github.com/ericapiano/TheMorningToast/issues"
   },
-  "homepage": "https://github.com/ericapiano/TheMorningToast#readme"
+  "homepage": "https://github.com/ericapiano/TheMorningToast#readme",
+  "heroku-run-build-script": true
 }
