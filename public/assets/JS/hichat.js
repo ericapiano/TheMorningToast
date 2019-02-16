@@ -16,19 +16,19 @@ HiChat.prototype = {
     });
     this.socket.on("nickExisted", function() {
       document.getElementById("info").textContent =
-        "!this username is already taken, please try again";
+        "this username is already taken! please try again";
     });
     this.socket.on("loginSuccess", function() {
       document.title =
-        "hichat | " + document.getElementById("nicknameInput").value;
+        "The Morning Chat | " + document.getElementById("nicknameInput").value;
       document.getElementById("loginWrapper").style.display = "none";
       document.getElementById("messageInput").focus();
     });
     this.socket.on("error", function(err) {
       if (document.getElementById("loginWrapper").style.display == "none") {
-        document.getElementById("status").textContent = "!fail to connect :(";
+        document.getElementById("status").textContent = "connectiton failed :(";
       } else {
-        document.getElementById("info").textContent = "!fail to connect :(";
+        document.getElementById("info").textContent = "connection failed :(";
       }
     });
     this.socket.on("system", function(nickName, userCount, type) {
@@ -114,7 +114,7 @@ HiChat.prototype = {
           if (!reader) {
             that._displayNewMsg(
               "system",
-              "!your browser doesn't support fileReader",
+              "your browser doesn't support fileReader!",
               ""
             );
             this.value = "";
